@@ -1,0 +1,29 @@
+{
+  "name": "question-of-the-day-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YashovardhanGupta/Question-Of-The-Day-Backend.git"
+  },
+  "keywords": [],
+  "author": "Yashovardhan Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YashovardhanGupta/Question-Of-The-Day-Backend/issues"
+  },
+  "homepage": "https://github.com/YashovardhanGupta/Question-Of-The-Day-Backend#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.1.5"
+  }
+}
