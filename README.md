@@ -35,12 +35,12 @@ Fetches the **Question of the Day**. The question rotates daily based on a deter
 ```json
 {
   "_id": "679d8a3f2e1b4c5d6e7f8a9b",
-  "title": "Two Sum",
+  "title": "First Non-Repeating Character",
   "difficulty": "Easy",
-  "problemStatement": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
-  "sampleInput": "[2,7,11,15], target = 9",
-  "sampleOutput": "[0,1]",
-  "hints": ["Use a hash map to store complements."],
+  "problemStatement": "Given a string, find the index of the first character that does not repeat anywhere in the string. If no such character exists, return -1.",
+  "sampleInput": "leetcode",
+  "sampleOutput": "0",
+  "hints": ["Use a hash map to store character frequencies.", "Then iterate again to find the first character with frequency 1."],
   "attempts": 42,
   "successRate": 0,
   "createdAt": "2026-02-01T04:00:00.000Z",
@@ -60,7 +60,7 @@ Submit your solution for evaluation. Uses **Mock Evaluation Logic** (string comp
 ```json
 {
   "questionId": "679d8a3f2e1b4c5d6e7f8a9b",
-  "userOutput": "[0,1]"
+  "userOutput": "0"
 }
 ```
 
@@ -92,9 +92,9 @@ To assist with testing the `POST /submit` endpoint, here are the expected output
 
 | Question Title | Sample Input | **Required Output for "Correct" Status** |
 | :--- | :--- | :--- |
-| **Reverse a String** | `"hello"` | `"olleh"` |
-| **Two Sum** | `[2,7,11,15], target = 9` | `"[0,1]"` |
-| **Valid Parentheses** | `"()[]{}"` | `"true"` |
+| **Count Vowel Clusters** | `"beautiful"` | `"3"` |
+| **First Non-Repeating Character** | `"leetcode"` | `"0"` |
+| **Balanced Binary Check** | `"11010"` | `"true"` |
 
 > **Tip:** You can use **ReqBin** or **Postman** to send these values in the `userOutput` field.
 
