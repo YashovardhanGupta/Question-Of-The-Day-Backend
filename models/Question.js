@@ -22,13 +22,13 @@ const QuestionSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  // Hidden field used for backend evaluation
+  //! Hidden field used for backend evaluation
   expectedOutput: {
     type: String,
     required: true,
-    select: false, // By default, don't return this to the client
+    select: false, //? By default, don't return this to the client
   },
-  // Fields to satisfy "Design" requirements (Hints, Stats)
+
   hints: [String],
   attempts: {
     type: Number,
