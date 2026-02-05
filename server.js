@@ -22,7 +22,9 @@ app.use('/api/submit', submitRoutes);
 
 // Health Check (Good for Railway deployments)
 app.get('/', (req, res) => {
-  res.status(200).json({ message: 'QOTD Backend API is running' });
+  res.status(200).json({ message: 'QOTD Backend API is running',
+    documentation: 'Refer to the README for API usage details.',
+   });
 });
 
 // Global Error Handler
